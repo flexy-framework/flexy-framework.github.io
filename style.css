@@ -1,0 +1,28 @@
+.blue {
+    color: #00b0bf;
+}
+
+.black {
+    color: #000000;
+}
+
+.grey {
+    color: #363636;
+}
+
+.white {
+    color: #ffffff;
+}
+
+.gloomy {
+    color: #ededed;
+}
+
+.bg-light-grey {
+    background: lightgray;
+}
+
+.bg-grey {
+    background: #363636;
+    color: white;
+}
