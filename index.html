@@ -12,20 +12,113 @@
     <title>FLEXY: A framework based on flex-box</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/flexy-framework/flexy/cf6648e5/flexy.css">
-    <link rel="stylesheet" type="text/css" href="style.css" </head>
+    <link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/flexy-framework/flexy/38913b7e/flexy.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
 
-    <body>
-        <!--[if lt IE 7]>
+<body>
+    <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-        <div class="main-container justify-center">
-            <div class="fixed-container flex-column justify-center bg-grey">
+    <div class="main-container flex-column aligh-middle">
+        <!--Header-->
+        <div class="col-md-12 fixed-container flex-column">
+            <div class="col-md-12 col-xl-12 flex-column txt-center justify-center align-middle bg-grey padding-left-right-20">
                 <h1>Flexy</h1>
                 <p>A CSS Framework Based on Flex-box</p>
             </div>
-        </div>
+            <!--Header end-->
 
-    </body>
+
+            <div class="col-md-12 fixed-container flex-column bg-light-grey padding-50">
+                <div class="col-md-12 bg-grey justify-center txt-center align-middle" style="border-radius:4px 4px 0 0; box-shadow:1px 2px 2px grey;">
+                    <h1 class="capitalize smallcaps">What is flexy?</h1>
+                </div>
+                <div class="col-md-12 bg-white flex-column justify-center padding-40" style="border-radius:0 0 4px 4px; height:auto; box-shadow:1px 2px 2px grey;">
+                    <div class="txt-justify">
+                        <p><strong>Flexy</strong>&nbsp is a minimal css framework based on flex-box property. Period.</p>
+                        <p>Before we start, we must khow, &nbsp<strong><i>What is Flex-box?</i></strong></br>
+                            Well, we all know about <strong>Responsive Web Design</strong>. Responsiveness means the layout and components of a website should be displayed in a reasonable way according to each size of screen. The popular way to do that
+                            is dividing the total width of the screen in a few columns. We call it grid system. Most of the popular design framework use this kind of grid system. It's not bad ctually. But, there is more efficient way to make a responsible
+                            website. Here comes <strong>Flex</strong>.</p>
+                        <p>Flex is one of the newest module of CSS. It allows us to distribute and display the contents in totally a new convention. If you want to know more about flex-box module, you can visit <a href="https://www.w3.org/TR/2012/WD-css3-flexbox-20120322/"
+                                target="_blank">here</a>.</br>
+                            <strong>Flexy</strong> therefore, is a very simple and minimal solution for designing a website with flex module. Let's dive into it!</p>
+                    </div>
+                </div>
+                <div class="col-md-12 bg-grey justify-center txt-center align-middle" style="margin-top:40px; border-radius:4px 4px 0 0; box-shadow:1px 2px 2px grey;">
+                    <h1 class="capitalize smallcaps">Inside flexy</h1>
+                </div>
+                <div class="col-md-12 bg-white flex-column justify-center padding-40" style="border-radius:0 0 4px 4px; height:auto; box-shadow:1px 2px 2px grey;">
+                    <h2 class="capitalize small-caps grey txt-center">Columns</h2>
+                    <div class="txt-justify">
+
+                        <p><strong>Flexy</strong> has a 12 columns grid system like other frameworks for 6 differnt screen sizes:
+                            <ul>
+                                <li>Exra small: -xs</li>
+                                <li>Small: -sm</li>
+                                <li>Medium: -md</li>
+                                <li>Large: -lg</li>
+                                <li>Extra large: -xl</li>
+                                <li> Extra extra large: -xxl</li>
+                            </ul>
+                        </p>
+                        <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 padding-15 flex-column" style="border: 1px solid grey; border-radius: 4px; box-shadow: 1px 2px 2px grey;">
+                            <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 flex-row" style="margin: 3px 0;">
+                                <div class="col-sm-1 col-md-1 col-lg-1 col-xl-1 col-xxl-1 bg-light-grey padding-5 justify-center text-center">col-1</div>
+                                <div class="col-sm-11 col-md-11 col-lg-11 col-xl-11 col-xxl-11"></div>
+                            </div>
+                            <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 flex-row" style="margin: 3px 0;">
+                                <div class="col-sm-2 col-md-2 col-lg-2 col-xl-2 col-xxl-2 bg-light-grey padding-5 justify-center text-center">col-2</div>
+                                <div class="col-sm-10 col-md-10 col-lg-10 col-xl-10 col-xxl-10"></div>
+                            </div>
+                            <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 flex-row" style="margin: 3px 0;">
+                                <div class="col-sm-3 col-md-3 col-lg-3 col-xl-3 col-xxl-3 bg-light-grey padding-5 justify-center text-center">col-3</div>
+                                <div class="col-sm-9 col-md-9 col-lg-9 col-xl-9 col-xxl-9"></div>
+                            </div>
+                            <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 flex-row" style="margin: 3px 0;">
+                                <div class="col-sm-4 col-md-4 col-lg-4 col-xl-4 col-xxl-4 bg-light-grey padding-5 justify-center text-center">col-4</div>
+                                <div class="col-sm-8 col-md-8 col-lg-8 col-xl-8 col-xxl-8"></div>
+                            </div>
+                            <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 flex-row" style="margin: 3px 0;">
+                                <div class="col-sm-5 col-md-5 col-lg-5 col-xl-5 col-xxl-5 bg-light-grey padding-5 justify-center text-center">col-5</div>
+                                <div class="col-sm-7 col-md-7 col-lg-7 col-xl-7 col-xxl-7"></div>
+                            </div>
+                            <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 flex-row" style="margin: 3px 0;">
+                                <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6 bg-light-grey padding-5 justify-center text-center">col-6</div>
+                                <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6"></div>
+                            </div>
+                            <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 flex-row" style="margin: 3px 0;">
+                                <div class="col-sm-7 col-md-7 col-lg-7 col-xl-7 col-xxl-7 bg-light-grey padding-5 justify-center text-center">col-7</div>
+                                <div class="col-sm-5 col-md-5 col-lg-5 col-xl-5 col-xxl-5"></div>
+                            </div>
+                            <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 flex-row" style="margin: 3px 0;">
+                                <div class="col-sm-8 col-md-8 col-lg-8 col-xl-8 col-xxl-8 bg-light-grey padding-5 justify-center text-center">col-8</div>
+                                <div class="col-sm-4 col-md-4 col-lg-4 col-xl-4 col-xxl-4"></div>
+                            </div>
+                            <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 flex-row" style="margin: 3px 0;">
+                                <div class="col-sm-9 col-md-9 col-lg-9 col-xl-9 col-xxl-9 bg-light-grey padding-5 justify-center text-center">col-9</div>
+                                <div class="col-sm-3 col-md-3 col-lg-3 col-xl-3 col-xxl-3"></div>
+                            </div>
+                            <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 flex-row" style="margin: 3px 0;">
+                                <div class="col-sm-10 col-md-10 col-lg-10 col-xl-10 col-xxl-10 bg-light-grey padding-5 justify-center text-center">col-10</div>
+                                <div class="col-sm-2 col-md-2 col-lg-2 col-xl-2 col-xxl-2"></div>
+                            </div>
+                            <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 flex-row" style="margin: 3px 0;">
+                                <div class="col-sm-11 col-md-11 col-lg-11 col-xl-11 col-xxl-11 bg-light-grey padding-5 justify-center text-center">col-11</div>
+                                <div class="col-sm-1 col-md-1 col-lg-1 col-xl-1 col-xxl-1"></div>
+                            </div>
+                            <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 flex-row" style="margin: 3px 0;">
+                                <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 bg-light-grey padding-5 justify-center text-center">col-12</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+</body>
 
 </html>

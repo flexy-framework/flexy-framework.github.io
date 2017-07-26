@@ -26,3 +26,66 @@
     background: #363636;
     color: white;
 }
+
+.bg-white {
+    background: white;
+    color: #363636;
+}
+
+a {
+    color: #373737;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #343434
+}
+
+.txt-center {
+    text-align: center;
+}
+
+.txt-justify {
+    text-align: justify;
+}
+
+.txt-left {
+    text-align: left;
+}
+
+.txt-right {
+    text-align: right;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.capitalize {
+    text-transform: capitalize;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    display: block !important;
+}
+
+@media (max-width: 500px) {
+    [class*="padding-"] {
+        padding: 10px;
+    }
+}
+
+.fixed-container {
+    max-width: 1366px !important;
+}
+
+.main-container {
+    width: 100%;
+}
