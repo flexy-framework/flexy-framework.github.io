@@ -12,13 +12,13 @@
     <title>FLEXY: A framework based on flex-box</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/flexy-framework/flexy/38913b7e/flexy.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/flexy-framework/flexy@v0.0-alpha/flexy.css">
     <link rel="stylesheet" type="text/css" href="style.css">
     <script src="https://use.fontawesome.com/d292af0a66.js"></script>
 
 </head>
 
-<body>
+<body class="bg-light-grey">
     <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
@@ -34,7 +34,10 @@
             </div>
             <!--Header end-->
 
-
+            <div class="col-md-12 flex-row justify-center padding-5 txt-center" style="background: rgba(237, 237, 237, 0.59);margin-top:20px;box-shadow: 2px 2px 2px black;">
+                <a class="btn-grey" href="https://github.com/flexy-framework/flexy/releases" role="button">Download</a>
+                <a class="btn-grey" href="https://cdn.jsdelivr.net/gh/flexy-framework/flexy@v0.0-alpha/flexy.css" role="button">Try CDN</a>
+            </div>
             <div class="col-md-12 fixed-container flex-column bg-light-grey padding-50">
                 <div class="col-md-12 bg-grey justify-center txt-center align-middle" style="border-radius:4px 4px 0 0; box-shadow:1px 2px 2px grey;">
                     <h1 class="capitalize smallcaps">What is flexy?</h1>
@@ -55,12 +58,12 @@
                     <h1 class="capitalize smallcaps">Inside flexy</h1>
                 </div>
                 <div class="col-md-12 bg-white flex-column justify-center padding-40" style="border-radius:0 0 4px 4px; height:auto; box-shadow:1px 2px 2px grey;">
-                    <h2 class="capitalize small-caps grey txt-center">Columns</h2>
+                    <h2 class="capitalize smallcaps grey txt-center">Columns</h2>
                     <div class="txt-justify">
 
                         <p><strong>Flexy</strong> has a 12 columns grid system like other frameworks for 6 differnt screen sizes:
                             <ul>
-                                <li>Exra small: col-xs-</li>
+                                <li>Extra small: col-xs-</li>
                                 <li>Small: col-sm-</li>
                                 <li>Medium: col-md-</li>
                                 <li>Large: col-lg-</li>
@@ -118,6 +121,49 @@
                                 <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 bg-light-grey padding-5 justify-center text-center">col-12</div>
                             </div>
                         </div>
+                    </div>
+                    <h2 class="capitalize smallcaps grey txt-center">Containers</h2>
+                    <div class="txt-justify">
+                        <p>There are two of container classes in the framework. Those are:
+                            <ul>
+                                <li><strong><code>container</code></strong>: This class is for full width container.</li>
+                                <li><strong><code>fixed-container</code></strong>: This one is used for a fixed width container of maximum width 1366px.</li>
+                            </ul>
+                        </p>
+                    </div>
+                    <h2 class="capitalize smallcaps grey txt-center">Helper Classes</h2>
+                    <div class="txt-justify">
+                        <p>We created a bunch of helper class to make you job easy. The class names are pretty self-explanatory.</p>
+                        <p>
+                            <h3>Flex Directions</h3>
+                            <ul>
+                                <li><strong><code>flex-column</code></strong></li>
+                                <li><strong><code>flex-row</code></strong></li>
+                                <li><strong><code>flex-column-reverse</code></strong></li>
+                                <li><strong><code>flex-row-reverse</code></strong></li>
+                            </ul>
+                        </p>
+                        <p>
+                            <h3>Justify Content</h3>
+                            <ul>
+                                <li><strong><code>justify-left</code> or </strong><strong><code>start</code></strong></li>
+                                <li><strong><code>justify-right</code> or </strong><strong><code>end</code></strong></li>
+                                <li><strong><code>justyfy-center</code></strong></li>
+                                <li><strong><code>space-arround</code></strong></li>
+                                <li><strong><code>space-between</code></strong></li>
+                                <li><strong><code>even</code></strong></li>
+                            </ul>
+                        </p>
+                        <p>
+                            <h3>Align Items</h3>
+                            <ul>
+                                <li><strong><code>align-start</code></li>
+                                <li><strong><code>align-middle</code></li>
+                                <li><strong><code>align-end</code></strong></li>
+                                <li><strong><code>stretch</code></strong></li>
+                                <li><strong><code>baseline</code></strong></li>
+                            </ul>
+                        </p>
                     </div>
                 </div>
             </div>

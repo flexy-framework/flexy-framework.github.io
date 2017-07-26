@@ -42,6 +42,23 @@ a:hover {
     color: #343434
 }
 
+.btn-grey {
+    color: #ededed;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 15px;
+    background: #373737;
+    border-radius: 5px;
+    box-shadow: 1px 2px 4px grey;
+    margin: 10px;
+}
+
+.btn-grey:hover {
+    color: #ffffff;
+    background: #404040;
+    box-shadow: 2px 4px 4px grey;
+}
+
 .git {
     color: #ededed;
 }
